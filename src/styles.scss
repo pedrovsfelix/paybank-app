@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import '../src/assets/css/scss/colors';
+@import '../src/assets/css/scss/layout';
+@import '../src/assets/css/scss/spacing';
+@import '../src/assets/css/scss/typography';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+
+    background-color: $white-dark;
+
+    &::-webkit-scrollbar {
+        padding-right: 4px;
+        width: 20px;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background: $black-lighten;
+        border: 6px solid $white-dark;
+    }
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.border-radius {
+    border-radius: 8px;
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.relative {
+    position: relative;
+}
+
+svg,
+img {
+    width: 100%;
+    //height: auto;
+}
+
+@import '../src/assets/css/scss/menu';
+@import '../src/assets/css/scss/icons';
+@import '../src/assets/css/scss/buttons';
+@import '../src/assets/css/scss/animations';
+@import '../src/assets/css/scss/accordion';
+@import '../src/assets/css/scss/lists';
